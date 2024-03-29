@@ -39,5 +39,7 @@ multiply([13,10,3])
 //no5
 function newArray(values){
   const firstFour=values.slice(0,4).map(item=>item*8)
-  const lastTwo=values.slice()
+  const lastTwo=values.slice(-1).map(item=>item+5)
+  const newArray=firstFour++(lastTwo)
 }
+console.log(newArray)
